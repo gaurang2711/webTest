@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudySource-Main</title>
+    <link rel="stylesheet" href="../Registry/Css/home.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sidebar">
+      <div class="nav-header">
+        <p class="logo">StudySource</p>
+        <i class="bx bx-menu-alt-right btn-menu"></i>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <i class="bx bx-search search-btn"></i>
+          <input type="text" placeholder="search..." />
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="#">
+            <i><img src="../Resources/IITJEE.svg" alt="alt"></i>
+            <span class="title">IIT-JEE</span>
+          </a>
+          <span class="tooltip">IIT-JEE</span>
+        </li>
+        <li>
+          <a href="#">
+            <i><img src="../Resources/NEET.svg" alt="alt"></i>
+            <span class="title">NEET</span>
+          </a>
+          <span class="tooltip">NEET</span>
+        </li>
+        <li>
+          <a href="#">
+            <i><img src="../Resources/MHTCET.svg" alt="alt"></i>
+            <span class="title">MHT-CET</span>
+          </a>
+          <span class="tooltip">MHT-CET</span>
+        </li>
+        <li>
+          <a href="#">
+            <i><img src="../Resources/BOARDS.svg" alt="alt"></i>
+            <span class="title">Boards</span>
+          </a>
+          <span class="tooltip">Boards</span>
+        </li>
+        <li>
+          <a href="#">
+            <i><img src="../Resources/CPS.svg" alt=""></i>
+            <span class="title">Compute-Science</span>
+          </a>
+          <span class="tooltip">Computer-Science</span>
+        </li>
+        <li>
+
+      <div class="theme-wrapper">
+        <i class="bx bxs-moon theme-icon"></i>
+        <p>Dark Theme</p>
+        <div class="theme-btn">
+          <span class="theme-ball"></span>
+        </div>
+      </div>
+    </section>
+    <h1>Some BLAH BLAH content</h1>
+
+    <script>
+      const btn_menu = document.querySelector(".btn-menu");
+      const side_bar = document.querySelector(".sidebar");
+
+      btn_menu.addEventListener("click", function () {
+        side_bar.classList.toggle("expand");
+        changebtn();
+      });
+
+      function changebtn() {
+        if (side_bar.classList.contains("expand")) {
+          btn_menu.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else {
+          btn_menu.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+      }
+    </script>
+  </body>
+</html>
